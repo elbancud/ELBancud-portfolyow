@@ -1,12 +1,12 @@
 export const socials = [
   {
     label: 'Github',
-    link: '#',
+    link: 'https://github.com/',
     icon: '',
   },
   {
     label: 'Linked In',
-    link: '#',
+    link: 'https://www.linkedin.com/in/bancud-emarson-959ba2201/',
     icon: '',
   },
 ];

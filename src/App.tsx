@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import './App.css';
-import NavBar from './components/layouts/NavBar';
+import DefaultLayout from '@/components/';
 interface ISocials {
   label: string;
   link: string;
@@ -15,7 +15,7 @@ function App() {
     <div className='App w-100'>
       {/* <canvas id='myThreeJsCanvas' /> */}
       <div className='w-100'>
-        <NavBar />
+        <DefaultLayout />
       </div>
     </div>
   );
