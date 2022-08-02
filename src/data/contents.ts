@@ -26,11 +26,13 @@ export const projects = [
 
 export const navItems = [
   {
-    label: 'contact',
+    label: 'Contact',
     link: '',
+    key: 'contact',
   },
   {
-    label: 'about me',
+    label: 'About me',
+    key: 'about me',
     link: '',
   },
 ];

@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import './App.css';
-import { socials } from './data/contents';
-
+import NavBar from './components/layouts/NavBar';
 interface ISocials {
   label: string;
   link: string;
@@ -13,15 +12,11 @@ function App() {
     const scene = new THREE.Scene();
   }, []);
   return (
-    <div className='App'>
-      {/* <canvas id='myThreeJsCanvas' />
-       */}
-      <ul>
-        {socials &&
-          socials.map((social: ISocials) => {
-            return <li>{social.label}</li>;
-          })}
-      </ul>
+    <div className='App w-100'>
+      {/* <canvas id='myThreeJsCanvas' /> */}
+      <div className='w-100'>
+        <NavBar />
+      </div>
     </div>
   );
 }
