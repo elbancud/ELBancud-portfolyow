@@ -23,3 +23,14 @@ export const projects = [
     icon: '',
   },
 ];
+
+export const navItems = [
+  {
+    label: 'contact',
+    link: '',
+  },
+  {
+    label: 'about me',
+    link: '',
+  },
+];
