@@ -1,7 +1,9 @@
 <div align='center'>
 
 ![logo](./src/assets/logo/logoVer2.png)
-![blast](https://gfycat.com/aptsecretdragon)
+
+<!-- ![blast](https://gfycat.com/aptsecretdragon) -->
+<img src="https://gfycat.com/aptsecretdragon"/>
 
 </div>
 
