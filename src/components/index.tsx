@@ -1,12 +1,12 @@
-import React from 'react';
 import Footer from './layouts/Footer';
-import NavBar from './layouts/NavBar';
+import Header from './layouts/Header';
 
 function index() {
   return (
     <div>
       <div className='w-100'>
-        <NavBar />
+        {/* <NavBar /> */}
+        <Header />
         <Footer />
       </div>
     </div>

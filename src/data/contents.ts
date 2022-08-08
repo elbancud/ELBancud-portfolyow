@@ -35,4 +35,9 @@ export const navItems = [
     key: 'about me',
     link: '',
   },
+  {
+    label: 'Projects',
+    key: 'Projects',
+    link: '',
+  },
 ];
