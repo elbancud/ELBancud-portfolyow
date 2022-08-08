@@ -1,7 +1,7 @@
+import DefaultLayout from '@/components/';
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import './App.css';
-import DefaultLayout from '@/components/';
 interface ISocials {
   label: string;
   link: string;
@@ -12,10 +12,25 @@ function App() {
     const scene = new THREE.Scene();
   }, []);
   return (
-    <div className='App w-100'>
+    <div className='App'>
       {/* <canvas id='myThreeJsCanvas' /> */}
-      <div className='w-100'>
-        <DefaultLayout />
+      <DefaultLayout />
+      <div className='sketchfab-embed-wrapper'>
+        {' '}
+        <iframe
+          title='Virtual Reality Brain User Interface Tilt Brush'
+          frameBorder='0'
+          allowFullScreen
+          // mozallowfullscreen='true'
+          // webkitallowfullscreen='true'
+          allow='autoplay; fullscreen; xr-spatial-tracking'
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src='https://sketchfab.com/models/285bbd0d6b9b4bb7bb988f8320cd4d30/embed'>
+          {' '}
+        </iframe>{' '}
       </div>
     </div>
   );
