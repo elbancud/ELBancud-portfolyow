@@ -1,1 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+h1, h2 {
+    font-weight: bold !important;
+    font-size: clamp(3.1rem,10vw ,5.6rem) !important;
+}
