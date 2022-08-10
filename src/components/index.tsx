@@ -1,4 +1,3 @@
-import ClientTestimonies from '@/components/layouts/sections/client-testimonies';
 import Header from './layouts/Header';
 function index() {
   return (
@@ -6,7 +5,7 @@ function index() {
       <div className='w-100'>
         {/* <NavBar /> */}
         <Header />
-        <ClientTestimonies />
+        {/* <ClientTestimonies /> */}
         {/* <Footer /> */}
       </div>
     </div>
