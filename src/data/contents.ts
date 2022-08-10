@@ -51,3 +51,17 @@ export const headerImagesLinks = [
     url: 'https://images.unsplash.com/photo-1598414351527-8052258ba4ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
   },
 ];
+export const clientTestimonies = [
+  {
+    client: 'qwe',
+    avatar: 'qwe',
+    comment: 'qwe',
+    starCount: 5,
+  },
+  {
+    client: 'qwe',
+    avatar: 'qwe',
+    comment: 'qwe',
+    starCount: 5,
+  },
+];

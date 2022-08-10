@@ -34,6 +34,10 @@ This will be the final and grandest of them all
 - [font](https://fonts.google.com/specimen/Work+Sans?query=work)
 
 <!--
+https://scadatlantaradio.org/wp-content/uploads/2019/02/consciousness-709143.jpg
 https://sketchfab.com/3d-models/brain-segmentation-b5d7683964734fc08a7090e9b3473a90
 https://sketchfab.com/3d-models/singularity-001-e392fc2d7d61449b9b20bfb997171b7b
-https://sketchfab.com/3d-models/neuronal-cell-environment-11fc6dbcc1594e9a806601bb7480f315 -->
+https://sketchfab.com/3d-models/neuronal-cell-environment-11fc6dbcc1594e9a806601bb7480f315
+https://www.niccologalletti.com/
+https://sketchfab.com/3d-models/personal-computer-b943e06de72c4b2b9ac6b9d7ca813f8f
+-->
