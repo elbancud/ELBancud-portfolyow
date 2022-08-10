@@ -1,3 +1,4 @@
+import DefaultLayout from '@/components/';
 import { RetroPc } from '@/components/models/RetroPc';
 import { Canvas } from '@react-three/fiber';
 import './App.css';
@@ -10,11 +11,21 @@ function App() {
   return (
     <div className='App'>
       {/* <canvas id='myThreeJsCanvas' /> */}
-      <Canvas style={{ height: 'calc(100vh - 170px)', width: '100vw' }}>
-        <pointLight position={[10, 10, 10]} />
+      <Canvas
+        style={{
+          // backgroundColor: '#000',
+          height: 'calc(100vh)',
+          width: '100%',
+          position: 'absolute',
+          // zIndex: -1,
+        }}>
+        {/* <OrbitControls /> */}
+        <ambientLight intensity={0.1} />
+        <hemisphereLight args={['#9e0090', '#71c18e']} />
+
         <RetroPc />
-        {/* <DefaultLayout /> */}
       </Canvas>
+      <DefaultLayout />
     </div>
   );
 }

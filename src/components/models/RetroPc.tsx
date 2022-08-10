@@ -13,7 +13,7 @@ export function RetroPc(props) {
     '/src/assets/3d-models/retro-computer/retroPc.gltf'
   );
   return (
-    <group scale={5} dispose={null}>
+    <group position={[-2, -0.2, 0.2]} scale={6} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.None} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.None} />

@@ -17,7 +17,7 @@ function Header() {
   };
   return (
     <>
-      <div className='container text-center m-auto py-8 my-16'>
+      <div className='container m-auto py-8 sm:p-64 grid place-items-center '>
         {/* <div className='w-100 grid place-items-center'>
           <p>Hi there, I'm Emarson Bancud</p>
           <a href='#'>
@@ -26,16 +26,13 @@ function Header() {
         </div> */}
         {/* Built simply by genuinity */}
 
-        {/* <h1 className='uppercase '>
-          "Built simply with genuine intention{' '}
+        <h1 className='uppercase '>
+          {/* "Built simply with genuine intention{' '}
           <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
           <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
-          <span>{OvalInterface(headerImagesLinks[1].url)}</span>"
-        </h1> */}
-        <ModelViewer
-          scale='40'
-          modelPath={'/src/assets/3d-models/retro-computer/scene.gltf'}
-        />
+          <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
+          Lorem ipsum dolor sit amet consect, adipisicing elit.
+        </h1>
       </div>
     </>
   );
