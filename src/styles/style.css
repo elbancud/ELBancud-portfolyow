@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 *, *::before, *::after {
@@ -41,12 +42,14 @@ h1, h2, h3, h4, h5, h6, li, a {
   margin: 0 !important;
 }
 
-.title {
-  font-size: 128px;
+.header-title {
+  line-height: 7rem;
+}
+.header-title .primary-title {
+  font-size: clamp(3rem, 8vw, 10rem) !important;
   color: #fff;
 }
-
-.title-color-fade {
-  font-size: 128px;
+.header-title .primary-title-fade {
+  font-size: clamp(3rem, 8vw, 10rem) !important;
   color: #B1B1B1;
 }/*# sourceMappingURL=style.css.map */

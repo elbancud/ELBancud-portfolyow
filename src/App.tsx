@@ -1,7 +1,4 @@
 import DefaultLayout from '@/components/';
-import { RetroPc } from '@/components/models/RetroPc';
-import { OrbitControls } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
 import './App.css';
 interface ISocials {
   label: string;
@@ -12,7 +9,7 @@ function App() {
   return (
     <div className='App'>
       {/* <canvas id='myThreeJsCanvas' /> */}
-      <Canvas
+      {/* <Canvas
         style={{
           // backgroundColor: '#000',
           height: 'calc(100vh)',
@@ -25,7 +22,7 @@ function App() {
         <hemisphereLight args={['#9e0090', '#71c18e']} />
 
         <RetroPc />
-      </Canvas>
+      </Canvas> */}
       <DefaultLayout />
     </div>
   );

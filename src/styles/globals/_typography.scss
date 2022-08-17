@@ -14,11 +14,14 @@ h3 {
 h1,h2,h3,h4,h5,h6,li,a,{
    margin: 0 !important; 
 }
-.title {
-    font-size: 128px;
-    color: #fff;
-}
-.title-color-fade {
-    font-size: 128px;
-    color: #B1B1B1;
+.header-title {
+    line-height: 7rem;
+    .primary-title {
+        font-size: clamp(3rem,8vw, 10rem) !important;
+        color: #fff;
+    }
+    .primary-title-fade {
+        font-size: clamp(3rem,8vw, 10rem) !important;
+        color: #B1B1B1;
+    }
 }

@@ -18,7 +18,8 @@ function Header() {
   return (
     <>
       <div className='app-header h-screen'>
-        <div className='container m-auto py-8 sm:p-64 grid place-items-center '>
+        {/* sm:p-64 */}
+        <div className='container m-auto py-8  grid place-items-center h-screen'>
           {/* <div className='w-100 grid place-items-center'>
           <p>Hi there, I'm Emarson Bancud</p>
           <a href='#'>
@@ -26,15 +27,18 @@ function Header() {
           </a>
         </div> */}
           {/* Built simply by genuinity */}
-
-          <h1 className='uppercase'>
-            {/* "Built simply with genuine intention{' '}
+          <div className='header-title'>
+            <h1 className='uppercase primary-title'>
+              {/* "Built simply with genuine intention{' '}
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
             <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
-            <span className='title'>Lorem</span>
-            <span className='title-color-fade'>Ipsum</span>
-          </h1>
+              Lorem
+            </h1>
+            <h1 className='primary-title-fade pl-10 sm:pl-20 uppercase'>
+              Ipsum
+            </h1>
+          </div>
         </div>
       </div>
     </>
