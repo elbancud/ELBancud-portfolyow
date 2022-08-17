@@ -1,5 +1,6 @@
 import DefaultLayout from '@/components/';
 import { RetroPc } from '@/components/models/RetroPc';
+import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import './App.css';
 interface ISocials {
@@ -19,7 +20,7 @@ function App() {
           position: 'absolute',
           // zIndex: -1,
         }}>
-        {/* <OrbitControls /> */}
+        <OrbitControls />
         <ambientLight intensity={0.1} />
         <hemisphereLight args={['#9e0090', '#71c18e']} />
 
