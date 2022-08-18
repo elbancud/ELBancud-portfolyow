@@ -3,25 +3,25 @@ h1 {
     font-size: clamp(2.5rem,9vw,5rem) !important;
 }
 h2 {
-    font-weight: 600 !important;
-    font-size: clamp(2rem,5vw,3rem) !important;
+    font-weight: 400 !important;
+    font-size: clamp(2rem,5vw,3.5rem) !important;
 }
 h3 {
     font-weight: 500 !important;
     font-size: clamp(1rem,5vw,1.5rem) !important;
-
 }
 h1,h2,h3,h4,h5,h6,li,a,{
    margin: 0 !important; 
 }
-.header-title {
-    line-height: 7rem;
-    .primary-title {
+.primary-title {
         font-size: clamp(3rem,8vw, 10rem) !important;
         color: #fff;
-    }
-    .primary-title-fade {
+}
+.primary-title-fade {
         font-size: clamp(3rem,8vw, 10rem) !important;
         color: #B1B1B1;
     }
+.header-title {
+    line-height: 7rem;
+    
 }
