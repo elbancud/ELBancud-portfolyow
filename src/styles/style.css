@@ -29,8 +29,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 600 !important;
-  font-size: clamp(2rem, 5vw, 3rem) !important;
+  font-weight: 400 !important;
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 
 h3 {
@@ -42,14 +42,16 @@ h1, h2, h3, h4, h5, h6, li, a {
   margin: 0 !important;
 }
 
-.header-title {
-  line-height: 7rem;
-}
-.header-title .primary-title {
+.primary-title {
   font-size: clamp(3rem, 8vw, 10rem) !important;
   color: #fff;
 }
-.header-title .primary-title-fade {
+
+.primary-title-fade {
   font-size: clamp(3rem, 8vw, 10rem) !important;
   color: #B1B1B1;
+}
+
+.header-title {
+  line-height: 7rem;
 }/*# sourceMappingURL=style.css.map */
