@@ -1,5 +1,4 @@
 import { socials } from '@/data/contents';
-import React from 'react';
 const Footer = () => {
   return (
     <div className='container p-3 m-auto'>
