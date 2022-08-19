@@ -13,7 +13,7 @@ export function Burger(props) {
     '/src/assets/3d-models/cheese-burger/burger.gltf'
   );
   return (
-    <group {...props} dispose={null} scale={0.025} position={[5, 0.5, 0.5]}>
+    <group {...props} dispose={null} scale={0.02} position={[5, 0.5, -5]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.18, 89.05, -0.27]}>
