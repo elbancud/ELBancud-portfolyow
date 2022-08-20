@@ -6,7 +6,9 @@ html {
   font-size: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
@@ -18,7 +20,7 @@ body {
 
 .app-header {
   background-color: #000000;
-  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.01) 25%, rgba(255, 255, 255, 0.01) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.01) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.03) 25%, rgba(255, 255, 255, 0.01) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.01) 76%, transparent 77%, transparent);
   height: 100%;
   background-size: 50px 50px;
 }
@@ -38,18 +40,30 @@ h3 {
   font-size: clamp(1rem, 5vw, 1.5rem) !important;
 }
 
-h1, h2, h3, h4, h5, h6, li, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
   margin: 0 !important;
 }
 
 .primary-title {
-  font-size: clamp(3rem, 8vw, 10rem) !important;
-  color: #fff;
+  font-size: clamp(5rem, 8vw, 10rem) !important;
+  background: linear-gradient(135deg, hsl(0deg, 0%, 26%) 0%, rgb(112, 22, 223) 0%, rgb(90, 4, 194) 36%, rgb(126, 13, 116) 54%, hsl(142deg, 100%, 38%) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .primary-title-fade {
   font-size: clamp(3rem, 8vw, 10rem) !important;
-  color: #B1B1B1;
+  color: #b1b1b1;
+  background: linear-gradient(135deg, rgb(52, 9, 112) 0%, rgb(26, 26, 26) 45%, hsl(264deg, 90%, 16%) 82%, hsl(142deg, 79%, 15%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header-title {

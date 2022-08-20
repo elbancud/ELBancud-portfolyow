@@ -29,6 +29,9 @@ This will be the final and grandest of them all
 - [My Master](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - [Brain Blast](https://www.youtube.com/watch?v=k3q1UTRKow0)
 
+<<<<<<< HEAD
+**NOTE:This will be a work in progress and never ending**
+=======
 ### Refs
 
 - [font](https://fonts.google.com/specimen/Work+Sans?query=work)
@@ -41,3 +44,4 @@ https://sketchfab.com/3d-models/neuronal-cell-environment-11fc6dbcc1594e9a806601
 https://www.niccologalletti.com/
 https://sketchfab.com/3d-models/personal-computer-b943e06de72c4b2b9ac6b9d7ca813f8f
 -->
+>>>>>>> c5c4524cc8b3a8f73c4dcb281ec520283f5b091b

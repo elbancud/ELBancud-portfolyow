@@ -28,15 +28,17 @@ function Header() {
         </div> */}
           {/* Built simply by genuinity */}
           <div className='header-title'>
-            <h1 className='uppercase primary-title'>
+            {/* <p>Hi! I'm Emarson, and all of this are..</p> */}
+            <h1 className='uppercase primary-title-fade'>
               {/* "Built simply with genuine intention{' '}
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
             <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
-              Lorem
+              Built simply with
             </h1>
-            <h1 className='primary-title-fade pl-10 sm:pl-20 uppercase'>
-              Ipsum
+            <h1 className='primary-title pl-10 sm:pl-20 uppercase text-center'>
+              Genuine Passion, <span className='text-slate-400'>&</span>{" "}
+              Interest
             </h1>
           </div>
         </div>

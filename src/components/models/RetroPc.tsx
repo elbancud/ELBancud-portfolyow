@@ -6,14 +6,14 @@ source: https://sketchfab.com/3d-models/retro-computer-9439cb5e09cc44caa63dfbfb2
 title: Retro computer
 */
 
-import { useGLTF } from '@react-three/drei';
+import { useGLTF } from "@react-three/drei";
 
 export function RetroPc(props) {
   const { nodes, materials } = useGLTF(
-    '/src/assets/3d-models/retro-computer/retroPc.gltf'
+    "/src/assets/3d-models/retro-computer/retroPc.gltf"
   );
   return (
-    <group position={[-2.5, -0.2, -2]} scale={6} dispose={null}>
+    <group position={[-3.8, -1.3, -1.7]} scale={7} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.None} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.None} />
@@ -22,4 +22,4 @@ export function RetroPc(props) {
   );
 }
 
-useGLTF.preload('/src/assets/3d-models/retro-computer/retroPc.gltf');
+useGLTF.preload("/src/assets/3d-models/retro-computer/retroPc.gltf");
