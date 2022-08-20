@@ -6,14 +6,19 @@ source: https://sketchfab.com/3d-models/cheese-burger-242aca8c33d64b09a339353585
 title: Cheese Burger
 */
 
-import { useGLTF } from '@react-three/drei';
+import { useGLTF } from "@react-three/drei";
 
 export function Burger(props) {
   const { nodes, materials } = useGLTF(
-    '/src/assets/3d-models/cheese-burger/burger.gltf'
+    "/src/assets/3d-models/cheese-burger/burger.gltf"
   );
   return (
-    <group {...props} dispose={null} scale={0.02} position={[5, 0.5, -5]}>
+    <group
+      {...props}
+      dispose={null}
+      scale={0.03}
+      position={[11, 3.5, -5]}
+      rotation={[0.7, 1, 0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.18, 89.05, -0.27]}>
@@ -23,7 +28,7 @@ export function Burger(props) {
                 rotation={[0.73, -0.82, -0.99]}>
                 <mesh
                   geometry={nodes.Sphere_2_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -31,7 +36,7 @@ export function Burger(props) {
                 rotation={[1.29, 0.27, -0.75]}>
                 <mesh
                   geometry={nodes.Sphere_3_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -39,7 +44,7 @@ export function Burger(props) {
                 rotation={[1.85, 0.27, -2.4]}>
                 <mesh
                   geometry={nodes.Sphere_4_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -47,7 +52,7 @@ export function Burger(props) {
                 rotation={[2.63, 0.39, 1.78]}>
                 <mesh
                   geometry={nodes.Sphere_5_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -55,7 +60,7 @@ export function Burger(props) {
                 rotation={[1.95, -0.1, 2.9]}>
                 <mesh
                   geometry={nodes.Sphere_8_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -63,7 +68,7 @@ export function Burger(props) {
                 rotation={[2.65, -0.23, 1.45]}>
                 <mesh
                   geometry={nodes.Sphere_9_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -71,7 +76,7 @@ export function Burger(props) {
                 rotation={[0.48, -0.08, -1.53]}>
                 <mesh
                   geometry={nodes.Sphere_10_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -79,7 +84,7 @@ export function Burger(props) {
                 rotation={[Math.PI / 2, 0, -1.44]}>
                 <mesh
                   geometry={nodes.Sphere_12_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -87,7 +92,7 @@ export function Burger(props) {
                 rotation={[0.21, 0.6, -0.12]}>
                 <mesh
                   geometry={nodes.Sphere_13_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -95,7 +100,7 @@ export function Burger(props) {
                 rotation={[2.67, -0.08, 1.53]}>
                 <mesh
                   geometry={nodes.Sphere_14_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -103,7 +108,7 @@ export function Burger(props) {
                 rotation={[1.96, 0.03, -3.06]}>
                 <mesh
                   geometry={nodes.Sphere_17_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -111,7 +116,7 @@ export function Burger(props) {
                 rotation={[2.19, 0.38, -2.65]}>
                 <mesh
                   geometry={nodes.Sphere_18_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -119,7 +124,7 @@ export function Burger(props) {
                 rotation={[1.8, 0.32, -2.22]}>
                 <mesh
                   geometry={nodes.Sphere_19_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -127,7 +132,7 @@ export function Burger(props) {
                 rotation={[2.65, 0.23, 1.69]}>
                 <mesh
                   geometry={nodes.Sphere_21_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -135,7 +140,7 @@ export function Burger(props) {
                 rotation={[2.63, 0.39, 1.78]}>
                 <mesh
                   geometry={nodes.Sphere_22_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -143,7 +148,7 @@ export function Burger(props) {
                 rotation={[2.24, 0.28, -2.8]}>
                 <mesh
                   geometry={nodes.Sphere_26_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -151,7 +156,7 @@ export function Burger(props) {
                 rotation={[1.4, 1.09, -2.95]}>
                 <mesh
                   geometry={nodes.Sphere_28_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -159,7 +164,7 @@ export function Burger(props) {
                 rotation={[1.22, 0.63, -1.02]}>
                 <mesh
                   geometry={nodes.Sphere_30_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -167,7 +172,7 @@ export function Burger(props) {
                 rotation={[1.8, -0.32, 2.22]}>
                 <mesh
                   geometry={nodes.Sphere_31_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -175,7 +180,7 @@ export function Burger(props) {
                 rotation={[0.86, 0.06, -0.07]}>
                 <mesh
                   geometry={nodes.Sphere_32_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -183,7 +188,7 @@ export function Burger(props) {
                 rotation={[1.1, -1.38, 1.09]}>
                 <mesh
                   geometry={nodes.Sphere_35_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -191,7 +196,7 @@ export function Burger(props) {
                 rotation={[2.24, 0.28, -2.8]}>
                 <mesh
                   geometry={nodes.Sphere_37_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -199,7 +204,7 @@ export function Burger(props) {
                 rotation={[2.03, -0.57, 2.32]}>
                 <mesh
                   geometry={nodes.Sphere_38_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -207,7 +212,7 @@ export function Burger(props) {
                 rotation={[Math.PI / 2, 0, 0.65]}>
                 <mesh
                   geometry={nodes.Sphere_39_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -215,7 +220,7 @@ export function Burger(props) {
                 rotation={[1.11, -0.57, 0.82]}>
                 <mesh
                   geometry={nodes.Sphere_40_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -223,7 +228,7 @@ export function Burger(props) {
                 rotation={[0.73, 0.82, -2.15]}>
                 <mesh
                   geometry={nodes.Sphere_44_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -231,7 +236,7 @@ export function Burger(props) {
                 rotation={[0.24, -0.77, 0.17]}>
                 <mesh
                   geometry={nodes.Sphere_46_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -239,7 +244,7 @@ export function Burger(props) {
                 rotation={[1.5, 0.71, -1.46]}>
                 <mesh
                   geometry={nodes.Sphere_48_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -247,7 +252,7 @@ export function Burger(props) {
                 rotation={[1.1, 1.38, -1.09]}>
                 <mesh
                   geometry={nodes.Sphere_49_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -255,7 +260,7 @@ export function Burger(props) {
                 rotation={[2.97, 0.26, -3.1]}>
                 <mesh
                   geometry={nodes.Sphere_53_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -263,7 +268,7 @@ export function Burger(props) {
                 rotation={[1.11, -0.57, 0.82]}>
                 <mesh
                   geometry={nodes.Sphere_56_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -271,7 +276,7 @@ export function Burger(props) {
                 rotation={[2.26, 0.94, 2.35]}>
                 <mesh
                   geometry={nodes.Sphere_57_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -279,7 +284,7 @@ export function Burger(props) {
                 rotation={[2.65, -0.23, 1.45]}>
                 <mesh
                   geometry={nodes.Sphere_59_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -287,7 +292,7 @@ export function Burger(props) {
                 rotation={[0.95, 0.38, -0.49]}>
                 <mesh
                   geometry={nodes.Sphere_60_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
               <group
@@ -295,7 +300,7 @@ export function Burger(props) {
                 rotation={[1.74, -0.35, 2.04]}>
                 <mesh
                   geometry={nodes.Sphere_63_Mat7_0.geometry}
-                  material={materials['Mat.7']}
+                  material={materials["Mat.7"]}
                 />
               </group>
             </group>
@@ -310,104 +315,104 @@ export function Burger(props) {
             <group position={[0, 0.75, 0]}>
               <mesh
                 geometry={nodes.Yolk_Mat12_0.geometry}
-                material={materials['Mat.12']}
+                material={materials["Mat.12"]}
               />
             </group>
             <mesh
               geometry={nodes.Egg_Mat6_0.geometry}
-              material={materials['Mat.6']}
+              material={materials["Mat.6"]}
             />
           </group>
           <group position={[-0.18, 49.99, -0.27]}>
             <mesh
               geometry={nodes.Lettuce_Mat10_0.geometry}
-              material={materials['Mat.10']}
+              material={materials["Mat.10"]}
             />
           </group>
           <group position={[-0.18, 42.61, -0.27]}>
             <group position={[0, 6.24, -33.67]} rotation={[-0.01, -0.04, 3.14]}>
               <mesh
                 geometry={nodes.Bacon_1_Mat4_0.geometry}
-                material={materials['Mat.4']}
+                material={materials["Mat.4"]}
               />
               <mesh
                 geometry={nodes.Bacon_1_Mat5_0.geometry}
-                material={materials['Mat.5']}
+                material={materials["Mat.5"]}
               />
             </group>
             <group position={[0, 6.24, 33.4]} rotation={[0, -0.05, -Math.PI]}>
               <mesh
                 geometry={nodes.Bacon_2_Mat4_0.geometry}
-                material={materials['Mat.4']}
+                material={materials["Mat.4"]}
               />
               <mesh
                 geometry={nodes.Bacon_2_Mat5_0.geometry}
-                material={materials['Mat.5']}
+                material={materials["Mat.5"]}
               />
             </group>
             <mesh
               geometry={nodes.Bacon_Mat4_0.geometry}
-              material={materials['Mat.4']}
+              material={materials["Mat.4"]}
             />
             <mesh
               geometry={nodes.Bacon_Mat5_0.geometry}
-              material={materials['Mat.5']}
+              material={materials["Mat.5"]}
             />
           </group>
           <group position={[-0.18, 37.48, -0.27]}>
             <mesh
               geometry={nodes.tomato_Mat2_0.geometry}
-              material={materials['Mat.2']}
+              material={materials["Mat.2"]}
             />
           </group>
           <group position={[20.56, 29.44, -32.38]}>
             <group position={[-45.66, 0, 4.58]}>
               <mesh
                 geometry={nodes.cucumber_1_Mat9_0.geometry}
-                material={materials['Mat.9']}
+                material={materials["Mat.9"]}
               />
               <mesh
                 geometry={nodes.cucumber_1_Mat3_0.geometry}
-                material={materials['Mat.3']}
+                material={materials["Mat.3"]}
               />
             </group>
             <group position={[-59.47, 0, 46.84]}>
               <mesh
                 geometry={nodes.cucumber_2_Mat9_0.geometry}
-                material={materials['Mat.9']}
+                material={materials["Mat.9"]}
               />
               <mesh
                 geometry={nodes.cucumber_2_Mat3_0.geometry}
-                material={materials['Mat.3']}
+                material={materials["Mat.3"]}
               />
             </group>
             <group position={[-22.72, 0, 70.9]}>
               <mesh
                 geometry={nodes.cucumber_3_Mat9_0.geometry}
-                material={materials['Mat.9']}
+                material={materials["Mat.9"]}
               />
               <mesh
                 geometry={nodes.cucumber_3_Mat3_0.geometry}
-                material={materials['Mat.3']}
+                material={materials["Mat.3"]}
               />
             </group>
             <group position={[14.08, 0, 44.27]}>
               <mesh
                 geometry={nodes.cucumber_4_Mat9_0.geometry}
-                material={materials['Mat.9']}
+                material={materials["Mat.9"]}
               />
               <mesh
                 geometry={nodes.cucumber_4_Mat3_0.geometry}
-                material={materials['Mat.3']}
+                material={materials["Mat.3"]}
               />
             </group>
             <mesh
               geometry={nodes.cucumber_Mat9_0.geometry}
-              material={materials['Mat.9']}
+              material={materials["Mat.9"]}
             />
             <mesh
               geometry={nodes.cucumber_Mat3_0.geometry}
-              material={materials['Mat.3']}
+              material={materials["Mat.3"]}
             />
           </group>
           <group
@@ -415,7 +420,7 @@ export function Burger(props) {
             rotation={[Math.PI, -0.71, Math.PI]}>
             <mesh
               geometry={nodes.Cheese_Mat1_0.geometry}
-              material={materials['Mat.1']}
+              material={materials["Mat.1"]}
             />
           </group>
           <group position={[-0.18, 9.24, -0.27]}>
@@ -442,4 +447,4 @@ export function Burger(props) {
   );
 }
 
-useGLTF.preload('/src/assets/3d-models/cheese-burger/burger.gltf');
+useGLTF.preload("/src/assets/3d-models/cheese-burger/burger.gltf");

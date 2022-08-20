@@ -1,27 +1,52 @@
 h1 {
-    font-weight: 900 !important;
-    font-size: clamp(2.5rem,9vw,5rem) !important;
+  font-weight: 900 !important;
+  font-size: clamp(2.5rem, 9vw, 5rem) !important;
 }
 h2 {
-    font-weight: 400 !important;
-    font-size: clamp(2rem,5vw,3.5rem) !important;
+  font-weight: 400 !important;
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 h3 {
-    font-weight: 500 !important;
-    font-size: clamp(1rem,5vw,1.5rem) !important;
+  font-weight: 500 !important;
+  font-size: clamp(1rem, 5vw, 1.5rem) !important;
 }
-h1,h2,h3,h4,h5,h6,li,a,{
-   margin: 0 !important; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  margin: 0 !important;
 }
 .primary-title {
-        font-size: clamp(3rem,8vw, 10rem) !important;
-        color: #fff;
+  font-size: clamp(5rem, 8vw, 10rem) !important;
+  background: linear-gradient(
+    135deg,
+    hsla(0, 0%, 26%, 1) 0%,
+    rgb(112, 22, 223) 0%,
+    rgb(90, 4, 194) 36%,
+    rgb(126, 13, 116) 54%,
+    hsla(142, 100%, 38%, 1) 90%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .primary-title-fade {
-        font-size: clamp(3rem,8vw, 10rem) !important;
-        color: #B1B1B1;
+  font-size: clamp(3rem, 8vw, 10rem) !important;
+  color: #b1b1b1;
+  background: linear-gradient(
+    135deg,
+    rgb(52, 9, 112) 0%,
+    rgb(26, 26, 26) 45%,
+    hsla(264, 90%, 16%, 1) 82%,
+    hsla(142, 79%, 15%, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header-title {
-    line-height: 7rem;
-    
+  line-height: 7rem;
 }
