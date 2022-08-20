@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.app-header {
+  background-color: #000000;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  height: 100%;
+  background-size: 50px 50px;
+}
+
+h1 {
+  font-weight: 900 !important;
+  font-size: clamp(2.5rem, 9vw, 5rem) !important;
+}
+
+h2 {
+  font-weight: 400 !important;
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+}
+
+h3 {
+  font-weight: 500 !important;
+  font-size: clamp(1rem, 5vw, 1.5rem) !important;
+}
+
+h1, h2, h3, h4, h5, h6, li, a {
+  margin: 0 !important;
+}
+
+.primary-title {
+  font-size: clamp(3rem, 8vw, 10rem) !important;
+  color: #fff;
+}
+
+.primary-title-fade {
+  font-size: clamp(3rem, 8vw, 10rem) !important;
+  color: #B1B1B1;
+}
+
+.header-title {
+  line-height: 7rem;
+}/*# sourceMappingURL=style.css.map */
