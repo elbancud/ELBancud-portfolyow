@@ -34,11 +34,13 @@ function Header() {
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
             <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
-              Built simply with
+              {/* Built simply with */}
+              Lorem Ipsum
             </h1>
             <h1 className='primary-title pl-10 sm:pl-20 uppercase text-center'>
-              Genuine Passion, <span className='text-slate-400'>&</span>{" "}
-              Interest
+              {/* Genuine Passion, <span className='text-slate-400'>&</span>{" "}
+              Interest */}
+              Lorem Ipsum
             </h1>
           </div>
         </div>
