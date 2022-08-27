@@ -18,7 +18,7 @@ function Header() {
   return (
     <>
       <div className='w-100 app-header h-screen'>
-        <div className='m-auto py-8  grid place-items-center h-screen'>
+        <div className='m-auto py-8 px-10 grid place-items-center h-screen'>
           {/* <div className='w-100 grid place-items-center'>
           <p>Hi there, I'm Emarson Bancud</p>
           <a href='#'>
@@ -30,7 +30,7 @@ function Header() {
             <p className='text-slate-300 leading-normal'>
               Hi! I'm Emarson, and all of this are..
             </p>
-            <h1 className='uppercase primary-title-fade'>
+            <h1 className='uppercase primary-title-fade font-bold'>
               {/* "Built simply with genuine intention{' '}
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
@@ -38,7 +38,7 @@ function Header() {
               Built simply with
               {/* Lorem Ipsum */}
             </h1>
-            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center'>
+            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center font-bold'>
               Genuine Passion, & Interest
               {/* Lorem Ipsum */}
             </h1>
