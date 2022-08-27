@@ -27,7 +27,7 @@ body {
 
 h1 {
   font-weight: 900 !important;
-  font-size: clamp(2.5rem, 9vw, 5rem) !important;
+  font-size: clamp(2.5rem, 5vw, 5rem) !important;
 }
 
 h2 {
@@ -52,7 +52,7 @@ a {
 }
 
 .primary-title {
-  font-size: clamp(5rem, 8vw, 10rem) !important;
+  font-size: clamp(3rem, 15vw, 10rem) !important;
   background: linear-gradient(135deg, hsl(0deg, 0%, 26%) 0%, rgb(112, 22, 223) 0%, rgb(90, 4, 194) 36%, rgb(126, 13, 116) 54%, hsl(142deg, 100%, 38%) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,5 +67,11 @@ a {
 }
 
 .header-title {
-  line-height: 7rem;
+  line-height: 8rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-title {
+    line-height: normal;
+  }
 }/*# sourceMappingURL=style.css.map */

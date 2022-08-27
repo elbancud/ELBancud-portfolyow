@@ -16,9 +16,9 @@ export function Burger(props) {
     <group
       {...props}
       dispose={null}
-      scale={0.03}
-      position={[11, 3.5, -5]}
-      rotation={[0.7, 1, 0]}>
+      scale={0.02}
+      position={[10, 3.5, -5]}
+      rotation={[-0.7, 1.5, 0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.18, 89.05, -0.27]}>

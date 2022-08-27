@@ -1,6 +1,6 @@
 h1 {
   font-weight: 900 !important;
-  font-size: clamp(2.5rem, 9vw, 5rem) !important;
+  font-size: clamp(2.5rem, 5vw, 5rem) !important;
 }
 h2 {
   font-weight: 400 !important;
@@ -21,7 +21,7 @@ a {
   margin: 0 !important;
 }
 .primary-title {
-  font-size: clamp(5rem, 8vw, 10rem) !important;
+  font-size: clamp(3rem, 15vw, 10rem) !important;
   background: linear-gradient(
     135deg,
     hsla(0, 0%, 26%, 1) 0%,
@@ -48,5 +48,11 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .header-title {
-  line-height: 7rem;
+  line-height: 8rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-title {
+    line-height: normal;
+  }
 }
