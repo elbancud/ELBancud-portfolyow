@@ -17,9 +17,8 @@ function Header() {
   };
   return (
     <>
-      <div className='app-header h-screen'>
-        {/* sm:p-64 */}
-        <div className='container m-auto py-8  grid place-items-center h-screen'>
+      <div className='w-100 app-header h-screen'>
+        <div className='m-auto py-8  grid place-items-center h-screen'>
           {/* <div className='w-100 grid place-items-center'>
           <p>Hi there, I'm Emarson Bancud</p>
           <a href='#'>
@@ -27,20 +26,21 @@ function Header() {
           </a>
         </div> */}
           {/* Built simply by genuinity */}
-          <div className='header-title'>
-            {/* <p>Hi! I'm Emarson, and all of this are..</p> */}
+          <div className='header-title text-center'>
+            <p className='text-slate-300 leading-normal'>
+              Hi! I'm Emarson, and all of this are..
+            </p>
             <h1 className='uppercase primary-title-fade'>
               {/* "Built simply with genuine intention{' '}
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
             <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
-              {/* Built simply with */}
-              Lorem Ipsum
+              Built simply with
+              {/* Lorem Ipsum */}
             </h1>
-            <h1 className='primary-title pl-10 sm:pl-20 uppercase text-center'>
-              {/* Genuine Passion, <span className='text-slate-400'>&</span>{" "}
-              Interest */}
-              Lorem Ipsum
+            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center'>
+              Genuine Passion, & Interest
+              {/* Lorem Ipsum */}
             </h1>
           </div>
         </div>

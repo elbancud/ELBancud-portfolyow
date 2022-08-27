@@ -1,6 +1,5 @@
-import DefaultLayout from '@/components/';
-import './App.css';
-import CanvasDefaultLayout from './components/CanvasDefaultLayout';
+import DefaultLayout from "@/components/";
+import CanvasDefaultLayout from "./components/CanvasDefaultLayout";
 
 interface ISocials {
   label: string;
