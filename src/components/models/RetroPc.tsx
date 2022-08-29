@@ -14,10 +14,10 @@ export function RetroPc(props) {
   );
   return (
     <group
-      position={[-5.5, -1.5, -3]}
+      position={[-9.5, -2, -3]}
       scale={6}
       dispose={null}
-      rotation={[-0.1, 1, 0]}>
+      rotation={[-0.1, 1.3, 0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.None} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.None} />

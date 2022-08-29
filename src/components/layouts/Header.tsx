@@ -28,33 +28,17 @@ function Header() {
           {/* Built simply by genuinity */}
           <div className='header-title text-center'>
             <p className='text-slate-300 leading-normal'>
-              Hi! I'm Emarson, and all of this are..
+              Hi! I'm Emarson, and all of this are built simply with..
             </p>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <h1 className='uppercase primary-title-fade secondary-gradient font-bold'>
-=======
-            <h1 className='uppercase primary-title-fade font-bold'>
->>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
-=======
-            <h1 className='uppercase primary-title-fade font-bold'>
->>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
               {/* "Built simply with genuine intention{' '}
             <span>{CircleInterface(headerImagesLinks[0].url)}</span>, passion{' '}
             <span>{OvalInterface(headerImagesLinks[0].url)}</span>, and interest.{' '}
             <span>{OvalInterface(headerImagesLinks[1].url)}</span>" */}
-              Built simply with
+              {/* Built simply with */}
               {/* Lorem Ipsum */}
             </h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center primary-gradient font-bold'>
-=======
-            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center font-bold'>
->>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
-=======
-            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center font-bold'>
->>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
               Genuine Passion, & Interest
               {/* Lorem Ipsum */}
             </h1>
