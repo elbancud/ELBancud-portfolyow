@@ -1,14 +1,11 @@
 h1 {
-  font-weight: 900 !important;
-  font-size: clamp(2.5rem, 5vw, 5rem) !important;
+  font-size: clamp(2.5rem, 5vw, 8rem) !important;
 }
 h2 {
-  font-weight: 400 !important;
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 h3 {
-  font-weight: 500 !important;
-  font-size: clamp(1rem, 5vw, 1.5rem) !important;
+  font-size: clamp(1.5rem, 5vw, 2rem) !important;
 }
 h1,
 h2,
@@ -20,8 +17,7 @@ li,
 a {
   margin: 0 !important;
 }
-.primary-title {
-  font-size: clamp(3rem, 15vw, 10rem) !important;
+.primary-gradient {
   background: linear-gradient(
     135deg,
     hsla(0, 0%, 26%, 1) 0%,
@@ -34,9 +30,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.primary-title-fade {
-  font-size: clamp(3rem, 8vw, 10rem) !important;
-  color: #b1b1b1;
+.secondary-gradient {
   background: linear-gradient(
     135deg,
     rgb(52, 9, 112) 0%,
@@ -46,6 +40,13 @@ a {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.primary-title {
+  font-size: clamp(3rem, 15vw, 10rem) !important;
+}
+.primary-title-fade {
+  font-size: clamp(3rem, 8vw, 10rem) !important;
+  color: #b1b1b1;
 }
 .header-title {
   line-height: 8rem;
