@@ -2,6 +2,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Burger } from "./models/Burger";
 import { RetroPc } from "./models/RetroPc";
+import { Rubics } from "./models/Rubics";
 
 function CanvasDefaultLayout() {
   return (
@@ -18,6 +19,7 @@ function CanvasDefaultLayout() {
         {/* <hemisphereLight args={['#9e0090', '#71c18e']} /> */}
         <directionalLight position={[10, 10, 5]} intensity={0.5} />
         <spotLight intensity={1} position={[1000, 0, 0]} />
+        <Rubics />
         <Burger />
         <RetroPc />
       </Canvas>
