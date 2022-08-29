@@ -31,7 +31,11 @@ function Header() {
               Hi! I'm Emarson, and all of this are..
             </p>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h1 className='uppercase primary-title-fade secondary-gradient font-bold'>
+=======
+            <h1 className='uppercase primary-title-fade font-bold'>
+>>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
 =======
             <h1 className='uppercase primary-title-fade font-bold'>
 >>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
@@ -43,7 +47,11 @@ function Header() {
               {/* Lorem Ipsum */}
             </h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center primary-gradient font-bold'>
+=======
+            <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center font-bold'>
+>>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
 =======
             <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center font-bold'>
 >>>>>>> 723e06858be980513080015e2c7ca30d1b46e053

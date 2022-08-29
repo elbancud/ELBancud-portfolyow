@@ -27,7 +27,11 @@ body {
 
 h1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: clamp(2.5rem, 5vw, 8rem) !important;
+=======
+  font-size: clamp(1.5rem, 5vw, 6rem) !important;
+>>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
 =======
   font-size: clamp(1.5rem, 5vw, 6rem) !important;
 >>>>>>> 723e06858be980513080015e2c7ca30d1b46e053
