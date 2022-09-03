@@ -1,3 +1,4 @@
+import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import AboutMe from "./layouts/sections/about-me";
 import Projects from "./layouts/sections/projects";
