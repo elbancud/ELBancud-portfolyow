@@ -18,7 +18,7 @@ function index() {
   };
   return (
     <>
-      <div className='h-screen sm:w-100 sm:w-3/4 m-auto sm:pt-96 text-center pt-20'>
+      <div className='h-screen sm:w-100 sm:w-3/4 m-auto sm:py-96 text-center '>
         <div className=''>
           <p>-About me -</p>
           <h1 className='leading-none'>
