@@ -1,20 +1,38 @@
+import vjm from "@/assets/project-ui/vjm-properties.jpg";
+import hesoyam from "@/assets/project-ui/hesoyam-ch-web.jpg";
+import chooseUp from "@/assets/project-ui/choose-up.jpg";
+
 function index() {
+  const Card = (bgColor, imageSrc, alt) => {
+    const classProperties = `${bgColor} px-10 py-16`;
+    return (
+      <div className={classProperties}>
+        <img
+          className='max-w-md max-h-md object-contain m-auto'
+          src={imageSrc}
+          alt={alt}
+        />
+      </div>
+    );
+  };
   return (
     <>
-      <div className='h-screen sm:w-100 sm:w-3/4 m-auto sm:pt-96 text-center pt-20'>
+      <div className='h-screen w-100 sm:pt-96 text-center pt-20 '>
         <div className=''>
-          <h1 className='leading-none'>Recent works</h1>
+          <h1 className='leading-none '>Recent works</h1>
         </div>
-        <div className='w-100 sm:max-w-4xl m-auto mt-32'>
-          <h3 className='uppercase'>
-            I have always find myself loving the entire process of web
-            interaction. From designing, developing back and front, maintanance,
-            and almost until user engagement. To put it simply, I've always been
-            immersed building websites from the ground up.
-          </h3>
+        <div className='mt-32 grid grid-cols-4 gap-5'>
+          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+          <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
+          <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
+          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
         </div>
-
-        <div></div>
+        <div className='grid grid-cols-4 gap-5 mt-'>
+          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+          <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
+          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+        </div>
       </div>
     </>
   );
