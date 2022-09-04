@@ -7,29 +7,22 @@ import pfc from "@/assets/project-ui/pfc.png";
 import taraenca from "@/assets/project-ui/taraenca.jpg";
 
 function index() {
-  const [scrollXRightTransform, setScrollXRightTransform] = useState<number>(0);
-  const [scrollXLeftTransform, setScrollXLeftTransform] = useState<number>(0);
+  const [scrollXRightTransform, setScrollXRightTransform] = useState<number>();
+  const [scrollXLeftTransform, setScrollXLeftTransform] = useState<number>();
 
   useEffect(() => {
     const handleScroll = () => {
       let scrollYValue = window.scrollY;
-      if (window.scrollY >= 1675) {
-        // scrollYValue;
-        setScrollXRightTransform(window.scrollY - 1675);
-        setScrollXLeftTransform(1675 - window.scrollY);
-      }
-      // else if (window.scrollY <= 2104) {
-      //   setScrollXRightTransform((currentValue) => {
-      //     return currentValue - 5;
-      //   });
-      // }
+      setScrollXRightTransform(window.scrollY * -0.05);
+      setScrollXLeftTransform(window.scrollY * 0.05);
+
       console.log(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollXRightTransform]);
+  }, [scrollXRightTransform, scrollXLeftTransform]);
 
   const Card = (bgColor, imageSrc, alt) => {
     const classProperties = `${bgColor} px-10 h-80 grid place-item-center`;
@@ -57,11 +50,13 @@ function index() {
           <h1 className='leading-none '>Recent works</h1>
         </div>
         <div style={GridContainerStyleRight}>
-          <div className='mt-32 grid grid-cols-4 gap-10 '>
-            <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
-            <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
-            <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
-            <div>{Card("bg-green-600", pfc, "plants for cats")}</div>
+          <div className='relative'>
+            <div className='mt-32 grid grid-cols-4 gap-10 '>
+              <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+              <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
+              <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
+              <div>{Card("bg-green-600", pfc, "plants for cats")}</div>
+            </div>
           </div>
         </div>
         <div style={GridContainerStyleLeft}>

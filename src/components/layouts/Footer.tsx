@@ -1,7 +1,7 @@
 import { socials } from "@/data/contents";
 const Footer = () => {
   return (
-    <div className='p-3 m-auto app-header'>
+    <div className='p-3 mt-10 app-header h-screen'>
       <div>
         <h1>Let’s work together</h1>
       </div>

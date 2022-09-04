@@ -12,7 +12,7 @@ function index() {
         <AboutMe />
         <Projects />
         {/* <ClientTestimonies /> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
