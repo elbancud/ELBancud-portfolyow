@@ -7,16 +7,22 @@ import pfc from "@/assets/project-ui/pfc.png";
 import taraenca from "@/assets/project-ui/taraenca.jpg";
 
 function index() {
-  const [scrollYValue, setScrollYValuue] = useState<Number>();
+  const [scrollXRightTransform, setScrollXRightTransform] = useState<number>();
+  const [scrollXLeftTransform, setScrollXLeftTransform] = useState<number>();
+
   useEffect(() => {
     const handleScroll = () => {
+      let scrollYValue = window.scrollY;
+      setScrollXRightTransform(window.scrollY * -0.05);
+      setScrollXLeftTransform(window.scrollY * 0.05);
+
       console.log(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollYValue]);
+  }, [scrollXRightTransform, scrollXLeftTransform]);
 
   const Card = (bgColor, imageSrc, alt) => {
     const classProperties = `${bgColor} px-10 h-80 grid place-item-center`;
@@ -30,21 +36,40 @@ function index() {
       </div>
     );
   };
+  const GridContainerStyleRight = {
+    transform: `translate(${scrollXRightTransform - 10}px, 0px)`,
+  };
+  const GridContainerStyleLeft = {
+    transform: `translate(${scrollXLeftTransform}px, 0px)`,
+  };
+  const transLateXClass = `translate-x-${scrollXRightTransform} `;
   return (
     <>
-      <div className='h-screen w-100 sm:pt-96 text-center py-20 '>
+      <div className='h-screen w-100 py-96 text-center translate-x '>
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>
-        <div className='mt-32 grid grid-cols-4 gap-10'>
-          <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
-          <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
-          <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
-          <div>{Card("bg-green-600", pfc, "plants for cats")}</div>
+        <div style={GridContainerStyleRight}>
+          <div className='relative'>
+            <div className='mt-32 grid grid-cols-4 gap-10 '>
+              <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+              <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
+              <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
+              <div>{Card("bg-green-600", pfc, "plants for cats")}</div>
+            </div>
+          </div>
         </div>
-        <div className='mt-10 grid grid-cols-4 gap-10'>
+        <div style={GridContainerStyleLeft}>
+          <div className='mt-5 grid grid-cols-4 gap-10 '>
+            <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
+            <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
+            <div>{Card("bg-orange-900", chooseUp, "choose up design")}</div>
+            <div>{Card("bg-green-600", pfc, "plants for cats")}</div>
+          </div>
+        </div>
+        {/* <div className='mt-10 grid grid-cols-4 gap-10 '>
           <div>{Card("bg-black", taraenca, "taraenca")}</div>
-        </div>
+        </div> */}
         {/* <div className='grid grid-cols-4 gap-5 mt-'>
           <div>{Card("bg-black", vjm, "vjm-comsultancy-property")}</div>
           <div>{Card("bg-violet-900", hesoyam, "hesoyam-ch")}</div>
