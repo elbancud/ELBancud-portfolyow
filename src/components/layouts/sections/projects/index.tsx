@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 
+import chooseUp from '@/assets/project-ui/choose-up.jpg';
+import hesoyamWeb from '@/assets/project-ui/hesoyam-ch-web.jpg';
 import pfc from '@/assets/project-ui/pfc.png';
+import vjm from '@/assets/project-ui/vjm-properties.jpg';
 
 function index() {
   const [scrollXRightTransform, setScrollXRightTransform] =
@@ -22,7 +25,7 @@ function index() {
   }, [scrollXRightTransform, scrollXLeftTransform]);
 
   const Card = (bgColor, imageSrc, alt) => {
-    const classProperties = `${bgColor} px-10 h-80 grid place-item-center min-w-sm mx-5`;
+    const classProperties = `${bgColor} px-10 h-80 flex justify-content-center align-items-center min-w-sm mx-5`;
     return (
       <div className={classProperties}>
         <img
@@ -50,12 +53,9 @@ function index() {
           <div className='relative'>
             <div style={GridContainerStyleRight}>
               <div className='mt-32 flex '>
-                {/* <div>{Card('bg-black', vjm, 'vjm-comsultancy-property')}</div>
-                <div>{Card('bg-violet-900', hesoyam, 'hesoyam-ch')}</div>
-                <div>{Card('bg-orange-900', chooseUp, 'choose up design')}</div> */}
-                <div>{Card('bg-green-600', pfc, 'plants for cats')}</div>
-                <div>{Card('bg-green-600', pfc, 'plants for cats')}</div>
-                <div>{Card('bg-green-600', pfc, 'plants for cats')}</div>
+                <div>{Card('bg-black', vjm, 'vjm-comsultancy-property')}</div>
+                <div>{Card('bg-violet-900', hesoyamWeb, 'hesoyam-ch')}</div>
+                <div>{Card('bg-orange-900', chooseUp, 'choose up design')}</div>
                 <div>{Card('bg-green-600', pfc, 'plants for cats')}</div>
               </div>
             </div>
