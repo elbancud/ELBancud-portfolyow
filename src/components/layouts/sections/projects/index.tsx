@@ -13,7 +13,7 @@ function index() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollXRightTransform(window.scrollY * -0.09);
+      setScrollXRightTransform(150 + window.scrollY * -0.09);
 
       // let scrollYValue =  + ;
       setScrollXLeftTransform(-300 + window.scrollY * 0.09);
@@ -45,7 +45,7 @@ function index() {
   // const transLateXClass = `translate-x-${scrollXRightTransform} `;
   return (
     <>
-      <div className='h-screen w-100 py-96 text-center '>
+      <div className='h-screen w-100 py-96 text-center mb-64'>
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>

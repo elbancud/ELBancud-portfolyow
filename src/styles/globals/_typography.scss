@@ -42,19 +42,18 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .primary-title {
-  font-size: clamp(3rem, 15vw, 25rem) !important;
+  font-size: clamp(3rem, 10vw, 15rem) !important;
 }
 .primary-title-fade {
   font-size: clamp(3rem, 8vw, 2rem) !important;
   color: #b1b1b1;
-  line-height: normal;
 }
 .header-title {
-  line-height: 8rem;
+  line-height: 4rem;
 }
 
 @media only screen and (min-width: 767px) {
   .header-title {
-    line-height: 17rem;
+    line-height: 10rem;
   }
 }
