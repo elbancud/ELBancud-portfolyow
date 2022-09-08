@@ -45,7 +45,7 @@ function index() {
   // const transLateXClass = `translate-x-${scrollXRightTransform} `;
   return (
     <>
-      <div className='h-screen w-100 py-96 text-center mb-64'>
+      <div className='w-100 text-center '>
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>

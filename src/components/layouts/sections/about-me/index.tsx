@@ -1,4 +1,4 @@
-import { headerImagesLinks } from "@/data/contents";
+import { headerImagesLinks } from '@/data/contents';
 function index() {
   const OvalInterface = (image_source: string) => {
     return (
@@ -18,7 +18,7 @@ function index() {
   };
   return (
     <>
-      <div className='h-screen sm:w-100 sm:w-3/4 m-auto sm:py-96 text-center '>
+      <div className=' sm:w-100 sm:w-3/4 m-auto sm:py-96 text-center '>
         <div className=''>
           <p>-About me -</p>
           <h1 className='leading-none'>
