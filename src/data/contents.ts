@@ -53,15 +53,32 @@ export const headerImagesLinks = [
 ];
 export const clientTestimonies = [
   {
-    client: 'qwe',
-    avatar: 'qwe',
-    comment: 'qwe',
+    client: 'Julien Delattre',
+    avatar:
+      'https://dw3i9sxi97owk.cloudfront.net/uploads/thumbs/e01254e3c33371d163d3c32bd25108e2_70x70.jpg',
+    comment:
+      'Emarson provided some great designs for the project. He made some interesting suggestions as well He used Figma and kept me updated regularly It was a pleasure to work again together',
     starCount: 5,
   },
   {
-    client: 'qwe',
-    avatar: 'qwe',
-    comment: 'qwe',
+    client: 'Sanak Pandya',
+    avatar:
+      'https://dw3i9sxi97owk.cloudfront.net/uploads/thumbs/bcecbf407ddaebf4ec659b413444a70c_70x70.jpg',
+    comment:
+      'Emarson did a fantastic job with my website. Totally overhauled it, made it look and operate so much better! He was very quick, nice to communicate with & great value. Would highly recommend.',
+    starCount: 5,
+  },
+  {
+    client: 'Albert Kovacs',
+    avatar:
+      'https://www.peopleperhour.com/imgs/default_avatar_light_150x150.jpg',
+    comment: 'Very nice guy pleasure to work with',
+    starCount: 5,
+  },
+  {
+    client: 'Jimmy Texon',
+    avatar: '',
+    comment: 'Son, palagay naman ng bulacan. Wala raw sabi ng encoder ko',
     starCount: 5,
   },
 ];

@@ -11,7 +11,6 @@ function index() {
         <Header />
         <AboutMe />
         <Projects />
-        {/* <ClientTestimonies /> */}
         <Footer />
       </div>
     </div>
