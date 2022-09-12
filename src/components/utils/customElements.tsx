@@ -1,9 +1,9 @@
 export const cardSmall = (
-  comment,
-  avatarSrc,
-  clientName,
-  starCount,
-  website
+  comment: string,
+  avatarSrc: string,
+  clientName: string,
+  starCount: string,
+  website: string
 ) => {
   return (
     <div className=' bg-gray-900 text-white p-5 flex flex-col justify-between rounded'>
@@ -23,7 +23,7 @@ export const cardSmall = (
     </div>
   );
 };
-export const CardMedium = (bgColor, imageSrc, alt) => {
+export const CardMedium = (bgColor: string, imageSrc: string, alt: string) => {
   const classProperties = `${bgColor} px-10 h-80 flex justify-content-center align-items-center min-w-sm mx-5`;
   return (
     <div className={classProperties}>

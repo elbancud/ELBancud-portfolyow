@@ -6,7 +6,7 @@ import Projects from './layouts/sections/projects';
 function index() {
   return (
     <div>
-      <div className='w-100'>
+      <div className='w-100 bg-black text-white'>
         {/* <NavBar /> */}
         <Header />
         <AboutMe />
