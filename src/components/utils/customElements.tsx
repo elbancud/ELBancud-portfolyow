@@ -2,7 +2,7 @@ export const cardSmall = (
   comment: string,
   avatarSrc: string,
   clientName: string,
-  starCount: string,
+  starCount: number,
   website: string
 ) => {
   return (

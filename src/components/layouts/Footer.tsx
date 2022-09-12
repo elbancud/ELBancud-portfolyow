@@ -2,37 +2,43 @@ import { clientTestimonies, socials } from '@/data/contents';
 import { cardSmall } from '../utils/customElements';
 const Footer = () => {
   return (
-    <div className='p-3 mt-10 app-header h-screen text-white text-center '>
-      <div className='pt-52'>
-        <h1 className=' primary-gradient font-bold'>Let’s work together</h1>
-        <p>
-          While we're at it here are some of what my previous clients have to
-          say with the overall experience we had.
-        </p>
+    <div>
+      <div className='p-3 mt-10 app-header h-auto text-white text-center '>
+        <section className='pt-52'>
+          <h1 className=' primary-gradient font-bold'>Let’s work together</h1>
+          <p>
+            While we're at it here are some of what my previous clients have to
+            say with the overall experience we had.
+          </p>
+        </section>
+        <section className='grid grid-cols-4 gap-5 my-10'>
+          {clientTestimonies.map((data) => {
+            return cardSmall(
+              data.comment,
+              data.avatar,
+              data.client,
+              data.starCount,
+              data.website
+            );
+          })}
+        </section>
+        <section>
+          <p className='py-5'>Socials</p>
+          <div className='flex justify-center space-x-5'>
+            {socials.map((data) => {
+              return (
+                <div>
+                  <a href={data.link} target='_blank'>
+                    <img src={data.icon} />
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </div>
-      <div className='grid grid-cols-4 gap-5 my-10'>
-        {clientTestimonies.map((data) => {
-          return cardSmall(
-            data.comment,
-            data.avatar,
-            data.client,
-            data.starCount,
-            data.website
-          );
-        })}
-      </div>
-
-      <div className='flex'>
-        {socials.map((data) => {
-          return (
-            <div>
-              <a href={data.link}></a>
-            </div>
-          );
-        })}
-      </div>
-      <div className=' w-100 grid place-items-center'>
-        @copyright 2022. Emarson Bancud
+      <div className='flex justify-center py-5'>
+        <p className='text-[#808080]'>@copyright 2022. Emarson Bancud</p>
       </div>
     </div>
   );

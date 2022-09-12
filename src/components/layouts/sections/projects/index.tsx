@@ -40,7 +40,7 @@ function index() {
             <div style={GridContainerStyleRight}>
               <div className='mt-32 flex '>
                 <div>
-                  {CardMedium('bg-black', vjm, 'vjm-comsultancy-property')}
+                  {CardMedium('bg-slate-100', vjm, 'vjm-comsultancy-property')}
                 </div>
                 <div>
                   {CardMedium('bg-violet-200', hesoyamWeb, 'hesoyam-ch')}
