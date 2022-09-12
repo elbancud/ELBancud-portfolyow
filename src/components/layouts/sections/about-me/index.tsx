@@ -1,21 +1,6 @@
+import { OvalInterface } from '@/components/utils/customElements';
 import { headerImagesLinks } from '@/data/contents';
 function index() {
-  const OvalInterface = (image_source: string) => {
-    return (
-      <img
-        className='inline-block overflow-hidden w-16 h-10 sm:h-20 sm:w-32 mb-5'
-        src={image_source}
-        alt='interface'
-      />
-    );
-  };
-  const CircleInterface = (image_source: string) => {
-    return (
-      <div className='inline-block rounded-full overflow-hidden w-16 h:10 sm:h-20 sm:w-20 bg-slate-700'>
-        <img src={image_source} alt='interface' />
-      </div>
-    );
-  };
   return (
     <>
       <div className=' sm:w-100 sm:w-3/4 m-auto sm:py-96 text-center '>
