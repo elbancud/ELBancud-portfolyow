@@ -59,6 +59,7 @@ export const clientTestimonies = [
     comment:
       'Emarson provided some great designs for the project. He made some interesting suggestions as well He used Figma and kept me updated regularly It was a pleasure to work again together',
     starCount: 5,
+    website: 'Plants for Cats',
   },
   {
     client: 'Sanak Pandya',
@@ -67,6 +68,7 @@ export const clientTestimonies = [
     comment:
       'Emarson did a fantastic job with my website. Totally overhauled it, made it look and operate so much better! He was very quick, nice to communicate with & great value. Would highly recommend.',
     starCount: 5,
+    website: 'Fileo',
   },
   {
     client: 'Albert Kovacs',
@@ -74,11 +76,13 @@ export const clientTestimonies = [
       'https://www.peopleperhour.com/imgs/default_avatar_light_150x150.jpg',
     comment: 'Very nice guy pleasure to work with',
     starCount: 5,
+    website: 'Million Loves',
   },
   {
     client: 'Jimmy Texon',
     avatar: '',
     comment: 'Son, palagay naman ng bulacan. Wala raw sabi ng encoder ko',
     starCount: 5,
+    website: 'VJM Consultancy Property',
   },
 ];

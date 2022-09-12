@@ -37,8 +37,6 @@ function index() {
             immersed building websites from the ground up.
           </h3>
         </div>
-
-        <div></div>
       </div>
     </>
   );
