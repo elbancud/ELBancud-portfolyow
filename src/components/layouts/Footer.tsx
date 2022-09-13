@@ -11,7 +11,7 @@ const Footer = () => {
             say with the overall experience we had.
           </p>
         </section>
-        <section className='grid grid-cols-4 gap-5 my-10'>
+        <section className='grid grid-cols-2 lg:grid-cols-4 gap-5 my-10'>
           {clientTestimonies.map((data) => {
             return cardSmall(
               data.comment,

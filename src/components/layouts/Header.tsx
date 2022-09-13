@@ -23,7 +23,7 @@ function Header() {
               {/* Lorem Ipsum */}
             </h1>
             <h1 className='primary-title pl-0 sm:pl-20 uppercase text-center primary-gradient font-bold'>
-              Genuine Passion, & Interest
+              Genuine Passion & Interest
               {/* Lorem Ipsum */}
             </h1>
           </div>

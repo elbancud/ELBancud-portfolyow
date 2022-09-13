@@ -101,3 +101,11 @@ export const clientTestimonies = [
     website: 'VJM Consultancy Property',
   },
 ];
+
+const addObj = <T>(obj) => {
+  let id = Math.random();
+  return {
+    ...obj,
+    id,
+  };
+};
