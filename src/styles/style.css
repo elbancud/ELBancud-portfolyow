@@ -80,11 +80,5 @@ a {
 }
 
 .header-title {
-  line-height: 15rem;
-}
-
-@media only screen and (max-width: 767px) {
-  .header-title {
-    line-height: 5rem;
-  }
+  line-height: 0.75;
 }/*# sourceMappingURL=style.css.map */

@@ -52,11 +52,11 @@ a {
   color: #b1b1b1;
 }
 .header-title {
-  line-height: 15rem;
+  line-height: 0.75;
 }
 
 @media only screen and (max-width: 767px) {
-  .header-title {
-    line-height: 5rem;
-  }
+  // .header-title {
+  //   line-height: ;
+  // }
 }
