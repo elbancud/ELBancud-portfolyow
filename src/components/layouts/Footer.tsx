@@ -27,7 +27,7 @@ const Footer = () => {
           <div className='flex justify-center space-x-5'>
             {socials.map((data) => {
               return (
-                <div>
+                <div key={data.key}>
                   <a href={data.link} target='_blank'>
                     <img src={data.icon} />
                   </a>

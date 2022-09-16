@@ -72,13 +72,32 @@ a {
 
 .primary-title {
   font-size: clamp(3rem, 15vw, 25rem) !important;
+  overflow: hidden;
 }
 
 .primary-title-fade {
   font-size: clamp(3rem, 8vw, 2rem) !important;
   color: #b1b1b1;
+  position: relative;
 }
 
 .header-title {
-  line-height: 0.75;
+  line-height: 1.5;
+}
+
+.trailsText {
+  width: 100%;
+  height: 280px;
+  line-height: 1;
+  font-size: clamp(3rem, 15vw, 25rem) !important;
+  font-weight: 900;
+  will-change: transform, opacity;
+  overflow: hidden;
+  background: linear-gradient(135deg, hsl(0deg, 0%, 26%) 0%, rgb(112, 22, 223) 0%, rgb(90, 4, 194) 36%, rgb(126, 13, 116) 54%, hsl(142deg, 100%, 38%) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trailsText > div {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
