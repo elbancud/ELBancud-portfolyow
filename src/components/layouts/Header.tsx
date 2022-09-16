@@ -1,20 +1,22 @@
 import Trail from '@/helpers/Trail';
 import { useEffect, useState } from 'react';
 function Header() {
-  const [transition, setTransition] = useState(false);
+  const [transition, setTransition] = useState(true);
 
   useEffect(() => {
-    setTransition((current) => !current);
+    console.log('Transition on render:' + transition);
+
     const handleScroll = () => {
-      if (window.scrollY === 0) {
+      if (window.scrollY === 10) {
         setTransition((current) => !current);
+        console.log('transition on reahing top:' + transition);
       }
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [open]);
+  }, [transition]);
   return (
     <>
       <header className='w-100 app-header h-screen '>
@@ -28,9 +30,10 @@ function Header() {
               Genuine Passion & Interest
             </h1> */}
             <div
-              onClick={() => {
-                setTransition((current) => !current);
-              }}>
+            // onClick={() => {
+            //   setTransition((current) => !current);
+            // }}
+            >
               <Trail open={open}>
                 <span className='trailsText'>Genuine</span>
                 <span className='trailsText'>Passion &</span>
