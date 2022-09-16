@@ -43,4 +43,5 @@ https://sketchfab.com/3d-models/neuronal-cell-environment-11fc6dbcc1594e9a806601
 https://www.niccologalletti.com/
 https://sketchfab.com/3d-models/personal-computer-b943e06de72c4b2b9ac6b9d7ca813f8f
 https://dennissnellenberg.com/
+https://aboutluca.com/about/
 -->

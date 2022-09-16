@@ -31,43 +31,35 @@ function index() {
   };
   return (
     <>
-      <div className='w-100 text-center '>
+      <section className='w-100 text-center'>
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>
-        <div className='block'>
-          <div className='relative'>
-            <div style={GridContainerStyleRight}>
-              <div className='mt-32 flex '>
-                <div>
-                  {CardMedium('bg-slate-100', vjm, 'vjm-comsultancy-property')}
-                </div>
-                <div>
-                  {CardMedium('bg-violet-200', hesoyamWeb, 'hesoyam-ch')}
-                </div>
-                <div>
-                  {CardMedium('bg-orange-200', chooseUp, 'choose up design')}
-                </div>
-                <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
+        <div className='relative'>
+          <div style={GridContainerStyleRight}>
+            <div className='mt-32 flex '>
+              <div>
+                {CardMedium('bg-slate-100', vjm, 'vjm-comsultancy-property')}
               </div>
+              <div>{CardMedium('bg-violet-200', hesoyamWeb, 'hesoyam-ch')}</div>
+              <div>
+                {CardMedium('bg-orange-200', chooseUp, 'choose up design')}
+              </div>
+              <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
             </div>
           </div>
         </div>
-        <div className='block'>
-          <div className='relative'>
-            <div style={GridContainerStyleLeft}>
-              <div className='mt-10 flex '>
-                <div>
-                  {CardMedium('bg-gray-200', millionLove, 'millionLove')}
-                </div>
-                <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
-                <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
-                <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
-              </div>
+        <div className='relative'>
+          <div style={GridContainerStyleLeft}>
+            <div className='mt-10 flex '>
+              <div>{CardMedium('bg-gray-200', millionLove, 'millionLove')}</div>
+              <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
+              <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
+              <div>{CardMedium('bg-green-200', pfc, 'plants for cats')}</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

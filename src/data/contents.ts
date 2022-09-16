@@ -101,11 +101,5 @@ export const clientTestimonies = [
     website: 'VJM Consultancy Property',
   },
 ];
-
-const addObj = <T>(obj) => {
-  let id = Math.random();
-  return {
-    ...obj,
-    id,
-  };
-};
+// Use the generics if an object has multiple nests
+// use extends with generic data type to make sure that the argument passed will be 

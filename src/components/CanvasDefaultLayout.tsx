@@ -1,17 +1,16 @@
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Burger } from "./models/Burger";
-import { RetroPc } from "./models/RetroPc";
-import { Rubics } from "./models/Rubics";
+import { Canvas } from '@react-three/fiber';
+import { Burger } from './models/Burger';
+import { RetroPc } from './models/RetroPc';
+import { Rubics } from './models/Rubics';
 
 function CanvasDefaultLayout() {
   return (
     <>
       <Canvas
         style={{
-          height: "calc(100vh)",
-          width: "100%",
-          position: "absolute",
+          height: 'calc(100vh)',
+          width: '100%',
+          position: 'absolute',
           // zIndex: -1,
         }}>
         {/* <OrbitControls /> */}

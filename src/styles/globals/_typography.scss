@@ -5,7 +5,7 @@ h2 {
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 h3 {
-  font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  font-size: clamp(1rem, 3vw, 2rem) !important;
 }
 h4 {
   font-size: clamp(.5rem, 5vw, 1.1rem) !important;
@@ -45,18 +45,18 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .primary-title {
-  font-size: clamp(3rem, 10vw, 15rem) !important;
+  font-size: clamp(3rem, 15vw, 25rem) !important;
 }
 .primary-title-fade {
   font-size: clamp(3rem, 8vw, 2rem) !important;
   color: #b1b1b1;
 }
 .header-title {
-  line-height: 9rem;
+  line-height: 15rem;
 }
 
 @media only screen and (max-width: 767px) {
   .header-title {
-    line-height: 3rem;
+    line-height: 5rem;
   }
 }
