@@ -31,7 +31,7 @@ function index() {
   };
   return (
     <>
-      <section className='w-100 text-center'>
+      <section className='w-100 text-center overflow-x-hidden'>
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>
