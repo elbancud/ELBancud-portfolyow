@@ -19,13 +19,32 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+body::before,
+body::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: darken;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: multiply;
+}
+
+body::before {
+  background: #000;
+  filter: url(#noiseFilter);
+}
+
 section {
   height: 100vh;
   position: relative;
 }
 
 .app-header {
-  background-color: #000000;
   background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.01) 25%, rgba(255, 255, 255, 0.01) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.01) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.03) 25%, rgba(255, 255, 255, 0.01) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.01) 76%, transparent 77%, transparent);
   height: 100%;
   background-size: 50px 50px;

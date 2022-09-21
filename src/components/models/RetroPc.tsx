@@ -6,12 +6,23 @@ source: https://sketchfab.com/3d-models/retro-computer-9439cb5e09cc44caa63dfbfb2
 title: Retro computer
 */
 
-import { useGLTF } from '@react-three/drei';
-
-export function RetroPc(props) {
+import { useGLTF } from '@react-three/drei/core/useGLTF';
+import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+type GLTFResult = GLTF & {
+  nodes: {
+    Object_2: any;
+    Object_3: any;
+    Pyramid: THREE.Mesh;
+  };
+  materials: {
+    None: undefined | any;
+    ['default']: THREE.MeshStandardMaterial;
+  };
+};
+export function RetroPc(props: any) {
   const { nodes, materials } = useGLTF(
     '/src/assets/3d-models/retro-computer/retroPc.gltf'
-  );
+  ) as unknown as GLTFResult;
   return (
     <group
       position={[-9.5, -2, -3]}
