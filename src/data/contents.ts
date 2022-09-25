@@ -4,16 +4,19 @@ import linkedinLogo from '@/assets/icons/linkedin.png';
 
 export const socials = [
   {
+    key: 1,
     label: 'Github',
     link: 'https://github.com/',
     icon: githubLogo,
   },
   {
+    key: 2,
     label: 'Linked In',
     link: 'https://www.linkedin.com/in/bancud-emarson-959ba2201/',
     icon: linkedinLogo,
   },
   {
+    key: 3,
     label: 'gmail',
     link: 'https://www.linkedin.com/in/bancud-emarson-959ba2201/',
     icon: gmailLogo,
@@ -102,4 +105,4 @@ export const clientTestimonies = [
   },
 ];
 // Use the generics if an object has multiple nests
-// use extends with generic data type to make sure that the argument passed will be 
+// use extends with generic data type to make sure that the argument passed will be

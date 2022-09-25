@@ -1,5 +1,5 @@
-import DefaultLayout from "@/components/";
-import CanvasDefaultLayout from "./components/CanvasDefaultLayout";
+import DefaultLayout from '@/components/';
+import CanvasDefaultLayout from './components/CanvasDefaultLayout';
 
 interface ISocials {
   label: string;
@@ -8,7 +8,7 @@ interface ISocials {
 }
 function App() {
   return (
-    <div className='App'>
+    <div className='App noise'>
       <CanvasDefaultLayout />
       <DefaultLayout />
     </div>

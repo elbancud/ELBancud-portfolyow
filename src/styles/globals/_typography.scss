@@ -46,13 +46,15 @@ a {
 }
 .primary-title {
   font-size: clamp(3rem, 15vw, 25rem) !important;
+  overflow: hidden;
 }
 .primary-title-fade {
   font-size: clamp(3rem, 8vw, 2rem) !important;
   color: #b1b1b1;
+  position: relative;
 }
 .header-title {
-  line-height: 0.75;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 767px) {

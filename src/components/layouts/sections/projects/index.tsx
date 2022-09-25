@@ -33,7 +33,11 @@ function index() {
   };
   return (
     <>
+<<<<<<< HEAD
       <section className='w-100 text-center overflow-x-hidden '>
+=======
+      <section className='w-100 text-center overflow-hidden'>
+>>>>>>> 0b68b263652e109d5e09ebfed1b14e4758dc08c8
         <div className=''>
           <h1 className='leading-none '>Recent works</h1>
         </div>
