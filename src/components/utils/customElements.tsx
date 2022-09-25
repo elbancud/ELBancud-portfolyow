@@ -24,7 +24,7 @@ export const cardSmall = (
   );
 };
 export const CardMedium = (bgColor: string, imageSrc: string, alt: string) => {
-  const classProperties = `${bgColor} px-10 h-80 flex justify-content-center align-items-center min-w-sm mx-5`;
+  const classProperties = `${bgColor} px-5 h-80 flex justify-content-center align-items-center min-w-sm mx-5`;
   return (
     <div className={classProperties}>
       <img className=' object-contain max-w-md' src={imageSrc} alt={alt} />

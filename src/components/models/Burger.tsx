@@ -7,18 +7,32 @@ title: Cheese Burger
 */
 
 import { useGLTF } from "@react-three/drei";
+import { useEffect, useState } from "react";
 
-export function Burger(props) {
-  const { nodes, materials } = useGLTF(
-    "/src/assets/3d-models/cheese-burger/burger.gltf"
-  );
+export function Burger<T>(props: T) {
+  const { nodes, materials } = newFunction();
+  const [scrollEffectRotation, setScrollEffectRotation] = useState<number>(0);
+  const [scrollEffectZ, setScrollEffectZ] = useState<number>(-5);
+  const [scrollEffectScale, setScrollEffectScale] = useState<number>(0.02);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollEffectRotation(window.scrollY * 0.003);
+      setScrollEffectZ(-5 + window.scrollY * 0.01);
+      setScrollEffectScale(0.02 + window.scrollY * 0.00005);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollEffectRotation]);
   return (
     <group
       {...props}
       dispose={null}
-      scale={0.02}
-      position={[9, -0.5, -5]}
-      rotation={[-0.7, 1.5, 0]}>
+      scale={scrollEffectScale}
+      position={[9, -0.5, scrollEffectZ]}
+      rotation={[-0.7, 1.5, scrollEffectRotation]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.18, 89.05, -0.27]}>
@@ -448,3 +462,6 @@ export function Burger(props) {
 }
 
 useGLTF.preload("/src/assets/3d-models/cheese-burger/burger.gltf");
+function newFunction(): { nodes: any; materials: any } {
+  return useGLTF("/src/assets/3d-models/cheese-burger/burger.gltf");
+}
