@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className='p-3 mt-10 app-header h-auto text-white text-center '>
-        <div className='pt-52'>
+        <div className='pt-20 sm:pt-52'>
           <h1 className=' primary-gradient font-bold'>Let’s work together</h1>
           <p>
             While we're at it here are some of what my previous clients have to
