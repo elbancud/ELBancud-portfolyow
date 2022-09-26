@@ -6,14 +6,16 @@ source: https://sketchfab.com/3d-models/retro-computer-9439cb5e09cc44caa63dfbfb2
 title: Retro computer
 */
 
-import { useGLTF } from "@react-three/drei";
-import { useEffect, useState } from "react";
+import { useGLTF } from '@react-three/drei';
+import { useEffect, useState } from 'react';
 
-export function RetroPc<T>(props: T) {
-  const { nodes, materials } = newFunction();
-  const [scrollEffectRotation, setScrollEffectRotation] = useState<number>(0);
-  const [scrollEffectZ, setScrollEffectZ] = useState<number>(-3);
-  const [scrollEffectScale, setScrollEffectScale] = useState<number>(6);
+export function RetroPc(props) {
+  const { nodes, materials } = useGLTF(
+    '/src/assets/3d-models/retro-computer/retroPc.gltf'
+  );
+  const [scrollEffectRotation, setScrollEffectRotation] = useState(0);
+  const [scrollEffectZ, setScrollEffectZ] = useState(-3);
+  const [scrollEffectScale, setScrollEffectScale] = useState(6);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +23,9 @@ export function RetroPc<T>(props: T) {
       setScrollEffectZ(-3 + window.scrollY * 0.01);
       setScrollEffectScale(6 + window.scrollY * 0.01);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollEffectRotation]);
   return (
@@ -40,7 +42,4 @@ export function RetroPc<T>(props: T) {
   );
 }
 
-useGLTF.preload("/src/assets/3d-models/retro-computer/retroPc.gltf");
-function newFunction(): { nodes: any; materials: any } {
-  return useGLTF("/src/assets/3d-models/retro-computer/retroPc.gltf");
-}
+useGLTF.preload('/src/assets/3d-models/retro-computer/retroPc.gltf');

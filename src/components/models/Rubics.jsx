@@ -6,16 +6,16 @@ source: https://sketchfab.com/3d-models/rubiks-cube-155420e09a124ec3a3bcca085228
 title: rubik's cube
 */
 
-import React, { useEffect, useRef, useState } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF } from '@react-three/drei';
+import { useEffect, useState } from 'react';
 
-export function Rubics<T>(props: T) {
+export function Rubics(props) {
   const { nodes, materials } = useGLTF(
-    "/src/assets/3d-models/rubics-cube/rubics.gltf"
+    '/src/assets/3d-models/rubics-cube/rubics.gltf'
   );
-  const [scrollEffectRotation, setScrollEffectRotation] = useState<number>(0);
-  const [scrollEffectZ, setScrollEffectZ] = useState<number>(0);
-  const [scrollEffectScale, setScrollEffectScale] = useState<number>(9);
+  const [scrollEffectRotation, setScrollEffectRotation] = useState(0);
+  const [scrollEffectZ, setScrollEffectZ] = useState(0);
+  const [scrollEffectScale, setScrollEffectScale] = useState(9);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +23,9 @@ export function Rubics<T>(props: T) {
       setScrollEffectZ(window.scrollY * 0.01);
       setScrollEffectScale(9 + window.scrollY * 0.03);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollEffectRotation]);
   return (
@@ -49,4 +49,4 @@ export function Rubics<T>(props: T) {
   );
 }
 
-useGLTF.preload("/src/assets/3d-models/rubics-cube/rubics.gltf");
+useGLTF.preload('/src/assets/3d-models/rubics-cube/rubics.gltf');
