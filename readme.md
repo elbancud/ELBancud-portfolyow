@@ -35,6 +35,9 @@ This will be the final and grandest of them all
 
 - [font](https://fonts.google.com/specimen/Work+Sans?query=work)
 
+### Bugs
+
+- Cannot load gltf - Fix: move the assets model to public directory
 <!--
 https://scadatlantaradio.org/wp-content/uploads/2019/02/consciousness-709143.jpg
 https://sketchfab.com/3d-models/brain-segmentation-b5d7683964734fc08a7090e9b3473a90
